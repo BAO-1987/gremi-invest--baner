@@ -1,0 +1,154 @@
+.banner {
+  position: relative;
+  padding: 80px 0 50px 80px;
+  background-color: $yellow-100;
+  @include flex-all-sb;
+  border-radius: $border-banner-radius;
+  color: $black;
+
+  &__content--realty {
+    max-width: 380px;
+    width: 100%;
+    padding-top: 65px;
+  }
+
+  &__title {
+    color: $yellow-300;
+
+    & span {
+      display: block;
+      color: $black;
+    }
+  }
+
+  &__text {
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    color: $gray-500;
+    margin-bottom: 65px;
+  }
+
+  &__next {
+    position: relative;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    color: $gray-500;
+    padding-left: 15px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 5px 5px 0px 0px;
+      background: rgba(249, 175, 49, 0.2);
+      width: 2px;
+      height: 40px;
+      left: -2px;
+    }
+
+    &::after {
+      background: $yellow-300;
+      bottom: -53px;
+    }
+  }
+
+  &__box {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 75px;
+    min-height: 50px;
+    @include flex-v-center;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__item:before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-color: $white;
+    border-radius: $border-icon-radius;
+    left: 0;
+  }
+
+  &__item::after,
+  &__item--black::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/sprite.svg#double-arrow-down");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    transform: translate(50%);
+  }
+
+  &__item--black::after {
+    background-image: url("../img/sprite.svg#double-arrow-up");
+  }
+
+  &__content--disadvantages {
+    max-width: 550px;
+    color: $red-200;
+  }
+
+  &__box--disadvantages {
+    right: 160px;
+    bottom: 0;
+  }
+
+  &__content--advantages {
+    max-width: 630px;
+    line-height: 1.2;
+  }
+
+  &__box--advantages,
+  &__box--finance {
+    right: 0;
+    bottom: 0;
+  }
+
+  &__content--finance {
+    max-width: 630px;
+    width: 100%;
+    color: $black;
+  }
+
+  &__title--finance {
+    color: $black;
+  }
+
+  &__text--finance {
+    max-width: 480px;
+    margin-bottom: 15px;
+  }
+}
+
+.btn--orange {
+  margin-bottom: 65px;
+}
