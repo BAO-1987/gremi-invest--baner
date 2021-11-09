@@ -2,7 +2,6 @@
   position: relative;
   padding: 80px 0 50px 80px;
   background-color: $yellow-100;
-  @include flex-all-sb;
   border-radius: $border-banner-radius;
   color: $black;
 
@@ -22,15 +21,13 @@
   }
 
   &__text {
-    line-height: 1.6;
     letter-spacing: 0.3px;
     color: $gray-500;
     margin-bottom: 65px;
   }
 
-  &__next {
+  &__scroll {
     position: relative;
-    line-height: 1.6;
     letter-spacing: 0.3px;
     color: $gray-500;
     padding-left: 15px;
@@ -73,11 +70,11 @@
 
   &__item {
     position: relative;
+    @include flex-v-center;
     font-weight: 500;
     font-size: 18px;
     padding-left: 75px;
     min-height: 50px;
-    @include flex-v-center;
   }
 
   &__item:not(:last-child) {
@@ -135,7 +132,6 @@
 
   &__content--finance {
     max-width: 630px;
-    width: 100%;
     color: $black;
   }
 

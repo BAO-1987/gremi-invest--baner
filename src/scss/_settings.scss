@@ -69,7 +69,7 @@ h2 {
   line-height: $lh-h2;
   font-weight: 600;
   color: $cod-gray;
-}gg
+}
 
 h3 {
   font-size: $font-h3;
@@ -82,6 +82,7 @@ h3 {
   display: block;
   padding: 15px 30px;
   font-weight: 600;
+  text-transform: capitalize;
   appearance: 0;
   border: 1px solid transparent;
   background-color: $cod-gray;
