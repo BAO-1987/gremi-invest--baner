@@ -58,13 +58,14 @@
   &__subtitle {
     font-weight: 600;
     font-size: 24px;
-    line-height: 1.2;
+    line-height: $lh-h1;
+    color: inherit;
     margin-bottom: 25px;
   }
 
   &__list {
     font-size: 18px;
-    line-height: 22px;
+    line-height: $lh-h1;
     margin-bottom: 50px;
   }
 
